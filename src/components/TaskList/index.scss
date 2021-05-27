@@ -1,0 +1,43 @@
+@import '../../style/vars.scss';
+
+.task {
+    padding: $gutter * 2;
+    height: 60vh;
+    overflow: auto;
+    border: 1px solid $backgroundBlue;
+    scroll-behavior: smooth;
+
+    .task_list {
+        padding: $gutter / 2;
+
+        .task_item {
+            list-style: none;
+            margin-top: $gutter / 2;
+            border: 1px solid $backgroundBlue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $gutter / 2;
+            border-radius: $radius;
+            transition: all 0.4s;
+
+
+
+            &:last-child {
+                margin-bottom: $gutter / 2;
+            }
+
+            &.done{
+                opacity: 0.5;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 2px 2px 5px $backgroundBlue;
+            }
+        }
+    }
+
+
+}

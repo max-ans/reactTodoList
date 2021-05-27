@@ -1,0 +1,25 @@
+@import '../../style/vars.scss';
+
+.task_form {
+    padding: $gutter;
+    
+
+    .form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .form_input {
+            flex-grow: 2;
+            width: 100%;
+            height: $gutter;
+        }
+
+        .form_button {
+            flex-grow: 1;
+            margin: 0 $gutter/2;
+            height: $gutter;
+
+        }
+
+    }
+}
